@@ -1,0 +1,9 @@
+<div [ngClass]="turnBlue ? 'blue' : ''">This div can be blue</div>
+<div>
+    <button (click)="blueIt()">Toggle Blueness</button>
+</div>
+<br/>
+<div [ngClass]="customClasses">This div has multiple stylings associate with it.</div>
+<div>
+    <button (click)="randomizeClasses()">Randomize Classes</button>
+</div>
