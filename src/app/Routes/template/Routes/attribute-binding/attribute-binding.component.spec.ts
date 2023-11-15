@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { AttributeBindingComponent } from './attribute-binding.component';
 
@@ -6,7 +6,7 @@ describe('AttributeBindingComponent', () => {
   let component: AttributeBindingComponent;
   let fixture: ComponentFixture<AttributeBindingComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ AttributeBindingComponent ]
     })

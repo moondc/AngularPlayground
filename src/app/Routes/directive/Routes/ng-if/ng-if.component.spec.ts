@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { NgIfComponent } from './ng-if.component';
 
@@ -6,7 +6,7 @@ describe('NgIfComponent', () => {
   let component: NgIfComponent;
   let fixture: ComponentFixture<NgIfComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ NgIfComponent ]
     })

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TemplateReferenceVariableComponent } from './template-reference-variable.component';
 
@@ -6,7 +6,7 @@ describe('TemplateReferenceVariableComponent', () => {
   let component: TemplateReferenceVariableComponent;
   let fixture: ComponentFixture<TemplateReferenceVariableComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ TemplateReferenceVariableComponent ]
     })
